@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$VOIDRAVEN | The Echo of the Forgotten</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+  <style>
+    body {
+      background: #0a001f;
+      color: #e0d4ff;
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+    
+    .hero-bg {
+      background: radial-gradient(circle at 50% 30%, rgba(168, 85, 247, 0.15) 0%, transparent 70%);
+    }
+
+    .raven-text {
+      text-shadow: 0 0 40px #a855f7,
+                   0 0 80px #7c3aed;
+    }
+
+    .star {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle 4s infinite;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="min-h-screen overflow-x-hidden">
+
+  <!-- Background Stars -->
+  <div id="stars" class="fixed inset-0 pointer-events-none z-0"></div>
+
+  <!-- Hero -->
+  <section class="hero-bg min-h-screen flex items-center justify-center relative">
+    <div class="text-center z-10 px-6">
+      <h1 class="text-8xl md:text-9xl font-black raven-text tracking-tighter mb-4">
+        VOIDRAVEN
+      </h1>
+      <p class="text-3xl md:text-4xl text-purple-300 mb-10">
+        The Echo of the Forgotten
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-6 justify-center mt-12">
+        <a href="#" id="buy-btn"
+           class="bg-gradient-to-r from-purple-600 to-fuchsia-600 hover:from-purple-700 hover:to-fuchsia-700 text-white text-2xl font-bold px-16 py-7 rounded-3xl transition-all hover:scale-105">
+          BUY $VRAVEN
+        </a>
+      </div>
+
+      <p class="mt-8 text-sm opacity-75 font-mono">Contract Address: <span class="text-purple-400">Coming Soon</span></p>
+    </div>
+
+    <div class="absolute bottom-10 text-6xl opacity-20">🪶</div>
+  </section>
+
+  <!-- Lore -->
+  <section class="py-28 border-t border-purple-950">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-16 text-purple-400">THE LAST ARCHIVIST</h2>
+      <div class="prose prose-invert prose-lg mx-auto text-purple-200">
+        <p class="text-xl leading-relaxed">
+          Когда последний свет гаснет в мире — приходит Voidraven.<br>
+          Он не судья и не палач. Он — хранитель памяти.
+        </p>
+        <p class="text-xl leading-relaxed mt-6">
+          Каждое перо в его крыльях — это история уничтоженной цивилизации.<br>
+          Он собирает эхо криков, смеха, войн и любви, которых больше нет.
+        </p>
+        <p class="text-2xl text-purple-300 italic text-center mt-12">
+          "Всё умирает.<br>Я помню."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap -->
+  <section class="py-24 bg-black/40">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-16">ROADMAP</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-purple-950/30 p-8 rounded-3xl border border-purple-900">
+          <div class="text-purple-400 text-2xl font-bold mb-4">Phase 01</div>
+          <h3 class="text-2xl font-semibold mb-3">Awakening</h3>
+          <ul class="space-y-3 text-purple-200">
+            <li>✓ Запуск сайта</li>
+            <li>✓ Сообщество</li>
+            <li>✓ Мини-игра Echo Collector</li>
+          </ul>
+        </div>
+        <div class="bg-purple-950/30 p-8 rounded-3xl border border-purple-900">
+          <div class="text-purple-400 text-2xl font-bold mb-4">Phase 02</div>
+          <h3 class="text-2xl font-semibold mb-3">Spreading Echo</h3>
+          <ul class="space-y-3 text-purple-200">
+            <li>• Листинг Raydium</li>
+            <li>• CoinGecko + CMC</li>
+            <li>• Маркетинг</li>
+          </ul>
+        </div>
+        <div class="bg-purple-950/30 p-8 rounded-3xl border border-purple-900">
+          <div class="text-purple-400 text-2xl font-bold mb-4">Phase 03</div>
+          <h3 class="text-2xl font-semibold mb-3">Eternal Archive</h3>
+          <ul class="space-y-3 text-purple-200">
+            <li>• Крупные биржи</li>
+            <li>• AR Experience</li>
+            <li>• Мерч + Лор-экспансия</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Social -->
+  <footer class="py-16 border-t border-purple-900 text-center">
+    <div class="flex justify-center gap-8 text-3xl mb-8">
+      <a href="#" class="hover:text-purple-400 transition-colors"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="hover:text-purple-400 transition-colors"><i class="fab fa-telegram"></i></a>
+      <a href="#" class="hover:text-purple-400 transition-colors"><i class="fab fa-discord"></i></a>
+    </div>
+    <p class="opacity-60">Made for those who will be forgotten.</p>
+    <p class="text-xs opacity-40 mt-6">© 2026 Voidraven • Not financial advice</p>
+  </footer>
+
+  <script>
+    // Create stars
+    function createStars() {
+      const starsContainer = document.getElementById('stars');
+      for (let i = 0; i < 150; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        const size = Math.random() * 3 + 1;
+        star.style.width = `${size}px`;
+        star.style.height = `${size}px`;
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.animationDelay = `-${Math.random() * 4}s`;
+        starsContainer.appendChild(star);
+      }
+    }
+    createStars();
+  </script>
+</body>
+</html>
